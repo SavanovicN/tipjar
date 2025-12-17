@@ -1,0 +1,31 @@
+{
+  "name": "tip-jar-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A community tip jar dApp on Polygon Amoy Testnet",
+  "workspaces": [
+    "hardhat",
+    "frontend"
+  ],
+  "scripts": {
+    "contracts:compile": "cd hardhat && bunx hardhat compile",
+    "contracts:test": "cd hardhat && bunx hardhat test",
+    "contracts:node": "cd hardhat && bunx hardhat node",
+    "frontend:dev": "cd frontend && bun dev",
+    "frontend:build": "cd frontend && bun build",
+    "frontend:lint": "cd frontend && bunx @biomejs/biome check",
+    "frontend:format": "cd frontend && bunx @biomejs/biome format --write"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "dapp",
+    "solidity",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
