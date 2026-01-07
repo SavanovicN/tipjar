@@ -88,4 +88,42 @@ describe('TipJar', function () {
             /InvalidAddress/
         )
     })
+
+    it ('Should reject tip to zero amount', async function () {
+        const { viem } = await network.connect()
+        const [, tipper] = await viem.getWalletClients()
+
+        const tipJar = await viem.deployContract('TipJar')
+        const tipJarAsTipper = await viem.getContractAt('TipJar', tipJar.address)
+
+        await assert.rejects(
+            tipJarAsTipper.write.tipCreator(
+                [tipper.account.address],
+                {
+                    account: tipper.account,
+                    value: parseEther('0')
+                }
+            ),
+            /InvalidAmount/
+        )
+    })
+
+    it('Should reject tip if no value sent', async function () {
+        const { viem } = await network.connect()
+        const [, tipper, creator] = await viem.getWalletClients()
+
+        const tipJar = await viem.deployContract('TipJar')
+        const tipJarAsTipper = await viem.getContractAt('TipJar', tipJar.address)
+
+        await assert.rejects(
+            tipJarAsTipper.write.tipCreator(
+                [creator.account.address],
+                {
+                    account: tipper.account,
+                    value: 0n
+                }
+            ),
+            /InvalidAmount/
+        )
+    })
 })
