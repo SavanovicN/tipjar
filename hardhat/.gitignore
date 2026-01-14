@@ -21,3 +21,6 @@
 
 # Ignition deployments
 /ignition/deployments
+
+# Environment variables
+.env
