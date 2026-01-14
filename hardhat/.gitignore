@@ -24,3 +24,7 @@
 
 # Environment variables
 .env
+
+# Useful scripts
+/scripts/generate-traffic.ts
+/scripts/tip.ts
