@@ -1,0 +1,41 @@
+{
+  "name": "tip-jar-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A community tip jar dApp on Polygon Amoy Testnet",
+  "workspaces": [
+    "hardhat",
+    "frontend"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.7",
+    "@nomicfoundation/hardhat-toolbox-viem": "5.0.2",
+    "@nomicfoundation/hardhat-viem": "3.0.2",
+    "@types/node": "22.7.5",
+    "dotenv": "17.2.3",
+    "hardhat": "3.1.6",
+    "tsx": "4.21.0",
+    "viem": "2.45.1"
+  },
+  "scripts": {
+    "contracts:compile": "cd hardhat && bunx hardhat compile",
+    "contracts:test": "cd hardhat && npx tsx --test test/*.test.ts",
+    "contracts:node": "cd hardhat && bunx hardhat node",
+    "frontend:dev": "cd frontend && bun dev",
+    "frontend:build": "cd frontend && bun build",
+    "frontend:lint": "cd frontend && bun run lint",
+    "frontend:lint:fix": "cd frontend && bun run lint:fix",
+    "frontend:format": "cd frontend && bun run format"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "dapp",
+    "solidity",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
