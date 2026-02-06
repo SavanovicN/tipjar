@@ -102,6 +102,14 @@ See each sub-project's README for details:
 - [`frontend/.env.example`](frontend/.env.example) — Network config, RPC URLs, WalletConnect
 - [`infra/`](infra/README.md) — Terraform/Vercel deployment config
 
+## Roadmap
+
+- I18N Will be implemented using next-intl in the next iteration
+- Voting engine
+- User/Creator profile
+- Time aware leaderboards
+- ...
+
 ## License
 
 MIT
