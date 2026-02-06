@@ -1,0 +1,8 @@
+vercel_api_token = "your-vercel-api-token"
+
+# These have defaults — only override if needed
+# git_repository                       = "SavanovicN/tipjar"
+# root_directory                       = "frontend"
+# vercel_team_id                       = "team_DGBZCsMm6Kf0kRZ2R5sEnw6l"
+# next_public_rpc_url                  = "https://polygon-amoy.g.alchemy.com/v2/YOUR_KEY"
+# next_public_walletconnect_project_id = "your-walletconnect-project-id"
