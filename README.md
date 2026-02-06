@@ -2,6 +2,8 @@
 
 A decentralized tipping platform where users send tips to creators on-chain. Built on Polygon Amoy Testnet.
 
+**Live:** [tipjar-ten.vercel.app](https://tipjar-ten.vercel.app/)
+
 ## Tech Stack
 
 | Layer | Technologies |
