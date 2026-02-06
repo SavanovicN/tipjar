@@ -8,7 +8,7 @@ export function Footer() {
           <div className="text-sm text-muted-foreground">Built on Polygon Amoy Testnet</div>
           <nav aria-label="Footer navigation" className="flex items-center gap-6">
             <ExternalLink
-              href="https://amoy.polygonscan.com/address/0x953A9a1Ea2b9e87FF287b1c2a9fc0C1345AfcCaF"
+              href="https://amoy.polygonscan.com/address/0x98B0c23eB065C7FaEd53EDA90feD6734ea14Cd9B"
               ariaLabel="View smart contract on PolygonScan (opens in new tab)"
             >
               View Contract
